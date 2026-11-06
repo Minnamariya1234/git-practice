@@ -1,0 +1,17 @@
+#!binbash
+dnf update -y
+dnf install -y httpd
+systemctl enable --now httpd
+
+TOKEN=$(curl -s -X PUT http169.254.169.254latestapitoken 
+  -H X-aws-ec2-metadata-token-ttl-seconds 21600)
+ID=$(curl -s -H X-aws-ec2-metadata-token $TOKEN 
+  http169.254.169.254latestmeta-datainstance-id)
+AZ=$(curl -s -H X-aws-ec2-metadata-token $TOKEN 
+  http169.254.169.254latestmeta-dataplacementavailability-zone)
+
+cat  varwwwhtmlindex.html EOF
+h1AWS Web App - Minna Mariya Joyh1
+pServed by instance $IDp
+pAvailability Zone $AZp
+EOF
