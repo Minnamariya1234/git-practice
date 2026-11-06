@@ -216,37 +216,6 @@ AWS Cloud Computing Hands-on Project
 
 
 
-\## Project Screenshots
-
-
-
-\### VPC Configuration
-
-!\[VPC](screenshots/vpc.png)
-
-
-
-\### EC2 Instances
-
-!\[EC2](screenshots/ec2-instances.png)
-
-
-
-\### Application Load Balancer
-
-!\[ALB](screenshots/alb.png)
-
-
-
-\### Auto Scaling Group
-
-!\[Auto Scaling](screenshots/autoscaling.png)
-
-
-
-\### Target Group Health
-
-!\[Target Group](screenshots/target-group.png)
 
 
 
